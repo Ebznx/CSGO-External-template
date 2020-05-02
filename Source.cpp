@@ -73,13 +73,13 @@ int getHealth(uintptr_t player) {
 //------------------------Main function------------------------//
 int main() {
 	hwnd = FindWindowA(NULL, "Counter-Strike: Global Offensive");				//Finds the window with the name: Counter-Strike: Global Offensive
-	GetWindowThreadProcessId(hwnd, &procId);						                //Looks for the window + process id 
-	moduleBase = GetModuleBaseAddress("client_panorama.dll");				    //Returns the address of: client_panorama.dll
-	hProcess = OpenProcess(PROCESS_ALL_ACCESS, NULL, procId);				    //Opens the process with access to read and write
+	GetWindowThreadProcessId(hwnd, &procId);						//Looks for the window + process id 
+	moduleBase = GetModuleBaseAddress("client_panorama.dll");				//Returns the address of: client_panorama.dll
+	hProcess = OpenProcess(PROCESS_ALL_ACCESS, NULL, procId);				//Opens the process with access to read and write
 
-	while (!GetAsyncKeyState(VK_F1)) {							                    //Loop ends when F1 is pressed
-		int localPlayerTeam = getTeam(localPlayer());					            //Gets the team of the localPlayer	
-		int localPlayerHeatlh = getHealth(localPlayer());				          //Gets the health of the localPlayer
+	while (!GetAsyncKeyState(VK_F1)) {							//Loop ends when F1 is pressed
+		int localPlayerTeam = getTeam(localPlayer());					//Gets the team of the localPlayer	
+		int localPlayerHeatlh = getHealth(localPlayer());				//Gets the health of the localPlayer
 
 		if (localPlayerTeam < 1) {
 			localPlayerTeam = 0;
