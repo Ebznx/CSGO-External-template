@@ -1,2 +1,2 @@
 # CSGO-External-template
-Made by: Skyler / Ebzmx 
+Made by: Skyler / Ebznx 
