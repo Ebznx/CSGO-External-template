@@ -81,17 +81,9 @@ int main() {
 		int localPlayerTeam = getTeam(localPlayer());					//Gets the team of the localPlayer	
 		int localPlayerHeatlh = getHealth(localPlayer());				//Gets the health of the localPlayer
 
-		if (localPlayerTeam < 1) {
-			localPlayerTeam = 0;
-		}
-
-		if (localPlayerHeatlh < 0) {
-			localPlayerHeatlh = 0;
-		}
-
-		cout << "health: " << localPlayerHeatlh << endl;			
-		cout << "team number: " << localPlayerTeam << endl;
-		system("cls");
+		/*
+		// Code here				
+		*/
 	}
 
 	return 0;
