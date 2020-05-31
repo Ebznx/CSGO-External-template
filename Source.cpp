@@ -3,8 +3,6 @@
 #include <TlHelp32.h>
 #include "Offsets.h"
 
-using namespace std;
-
 uintptr_t moduleBase;
 DWORD procId;
 HWND hwnd;
