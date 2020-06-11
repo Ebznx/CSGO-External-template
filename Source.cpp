@@ -3,6 +3,8 @@
 #include <TlHelp32.h>
 #include "Offsets.h"
 
+//offsets: https://github.com/frk1/hazedumper/blob/master/csgo.hpp
+
 uintptr_t moduleBase;
 DWORD procId;
 HWND hwnd;
@@ -76,7 +78,7 @@ int main() {
 	hProcess = OpenProcess(PROCESS_ALL_ACCESS, NULL, procId);
 
 	while (!GetAsyncKeyState(VK_F1)) {
-		
+		//your own code	
 	}
 
 	return 0;
