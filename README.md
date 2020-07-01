@@ -1,5 +1,5 @@
 # CSGO-External-template
-Made by: __stdcall
+Made by: Sanity
 
-Based on tutorials from Cyborg Elf: https://www.youtube.com/channel/UC_bMnu_fYu9-2_EY7GUfclQ <br/>
+Really basic template based on tutorials from Cyborg Elf: https://www.youtube.com/channel/UC_bMnu_fYu9-2_EY7GUfclQ <br/>
 Alot could be improved
